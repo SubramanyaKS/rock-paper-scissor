@@ -106,3 +106,13 @@ function getResult(){
     //     tr.innerHTML=tt;
     // }
 }
+
+function info(){
+    // if(window.getComputedStyle(inform).display==='none'){
+       var infor=  document.getElementById('info');
+       infor.classList.toggle("mystyle");
+    // }
+    // if(window.getComputedStyle(inform).display === 'block'){
+    //     document.getElementById('info').style.display='none';
+    // }
+}
