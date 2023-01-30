@@ -1,0 +1,88 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100%;
+    font-family:"cursive";
+}
+html{
+    width:100%;
+    height:100%;
+}
+.navbar-brand{
+    color:white;
+}
+.main, .total-score{
+    padding:25px;
+    margin-top: 50px 0;
+    position: relative;
+    top: 30px;
+    left: -25px;
+    text-align:center;
+}
+
+
+
+.input-button{
+    padding:30px;
+    text-align:center;
+    align-item:center;
+
+}
+button{
+    background-color:white;
+    color:black;
+    padding:10px;
+    width:80px;
+    border-radius:10%;
+    border: 4px solid black;
+}
+.option{
+    border: 4px solid black;
+    border-radius: 50%;
+    margin: 0px 20px;
+    padding: 10px;
+    display: inline-block;
+}
+.choice1, .choice2{
+    padding:10px;
+    display: inline-block;
+}
+.score1, .score2{
+    padding:10px;
+    display: inline-block;
+}
+img{
+    background-color:white;
+}
+.choice2{
+    /* align-item : left; */
+    text-align:left;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+.choice1{
+    position: relative;
+    top: 30px;
+    /* right: -25px; */
+}
+.res{
+    position: relative;
+    top: 30px;
+    right:-30px;
+}
+.reset{
+    text-align:center;
+}
+.anim{
+    padding:50px;
+    margin:50px;
+    text-align:center;
+}
