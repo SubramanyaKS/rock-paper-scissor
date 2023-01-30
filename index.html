@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper scissor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link  href="./css/index.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Rock Paper scissor</span>
+      </div>
+    </nav>
+    <section class="main">
+      <div class="choice1">
+        <h2>Computer Choice : <span id="computer-choice"></span></h2>
+      </div>
+      <div class="choice2">
+        <h2>User Choice : <span id="user-choice"></span></h2>
+      </div>
+      <div class="res">
+        <h2>Result : <span id="result"></span></h2>
+      </div>
+      
+    </section>
+    <section class="total-score">
+      <div class="score1">
+        <h3>Computer Score: <span id="computer-score"></span></h3>
+      </div>
+      <div class="score2">
+        <h3>User Score : <span id="user-score"></span></h3>
+      </div>
+
+    </section>
+    <section class="anim">
+        <div class="option" id="rock1">
+            <img src="images/rock.png" height="80px" width="80px" />
+        </div>
+        <div class="option" id="paper1">
+            <img src="images/papers.png" height="80px" width="80px" />
+        </div>
+        <div class="option" id="scissor1">
+            <img src="images/scissor.png" height="80px" width="80px" />
+        </div>
+
+    </section>
+    <div class="reset">
+      <button onclick="reset()"><b>Reset</b></button>
+    </div>
+    
+
+    <script src="./js/app.js" charset="utf-8"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
