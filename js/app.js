@@ -2,6 +2,7 @@ const computerChoiceDisplay = document.getElementById('computer-choice');
 const userChoiceDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
+const tr= document.getElementById('total');
 
 const rk= document.getElementById('rock1');
 const pa = document.getElementById('paper1');
@@ -35,14 +36,8 @@ sc.addEventListener('click', function () {
 let userChoice;
 let computerChoice;
 let result;
+let tt;
 
-
-// possibleChoices.forEach(pc => pc.addEventListener('click',(e)=>{
-//     userChoice = e.target.id;
-//     userChoiceDisplay.innerHTML=userChoice;
-//     generateComputerChoice();
-//     getResult();
-// }))
 
 function generateComputerChoice(){
     const randomNumber = Math.floor(Math.random() * 3)+1;
@@ -68,36 +63,46 @@ function reset(){
 
 function getResult(){
     if(userChoice===computerChoice){
-        result="It's a Draw";
+        result="It's a Draw 🤝";
         cc==cc;
 
     }
     if(computerChoice==="rock" && userChoice==="paper"){
-        result="You Win";
+        result="You Win ✔";
         uc+=1;
     }
     if(computerChoice==="rock" && userChoice==="scissor"){
-        result="You Lose";
+        result="You Lose ✖";
         cc+=1;
         uc==uc;
     }
     if(computerChoice==="paper" && userChoice==="rock"){
-        result="You Lose";
+        result="You Lose ✖";
         cc+=1;
     }
     if(computerChoice==="paper" && userChoice==="scissor"){
-        result="You Win";
+        result="You Win ✔";
         uc+=1;
     }
     if(computerChoice==="scissor" && userChoice==="paper"){
-        result="You Lose";
+        result="You Lose ✖";
         cc+=1;
     }
     if(computerChoice==="scissor" && userChoice==="rock"){
-        result="You Win";
+        result="You Win ✔";
         uc+=1;
     }
+    
     resultDisplay.innerHTML=result;
     cs.innerHTML=cc;
     us.innerHTML=uc;
+    // if(cc>=5){
+    //     tt="Oh Sorry,Computer defeated You,Please Try again";
+    //     tr.innerHTML=tt;
+        
+    // }
+    // if(uc>=5){
+    //     tt="Congratulation,You defeated Computer,";
+    //     tr.innerHTML=tt;
+    // }
 }
