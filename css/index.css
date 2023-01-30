@@ -37,11 +37,15 @@ html{
     align-item:center;
 
 }
+.mystyle{
+    display:block !important;
+}
 button{
     background-color:white;
     color:black;
     padding:10px;
     width:120px;
+    font-size:20px;
     border-radius:10%;
     border: 4px solid black;
 }
@@ -88,6 +92,27 @@ img{
     padding:30px;
     margin:50px;
     text-align:center;
+}
+.inform{
+    padding:30px;
+    text-align:center !important;
+}
+ul{ 
+    display:inline-block;
+}
+h4{
+    font-size:28px;
+}
+li,p{
+    font-size:22px;
+    text-align:center ;
+    
+}
+.rules, .info{
+    padding:20px;
+    border:2px solid black;
+    border-radius:10%;
+    text-align:center !important;
 }
 .footer{
     padding-top:20px;
