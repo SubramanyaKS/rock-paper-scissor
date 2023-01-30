@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper scissor</title>
-    <link rel="icon" href="./images/logo2.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo2.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link  href="./css/index.css" rel="stylesheet"/>
+    <link href="./css/index.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar bg-dark">
@@ -21,7 +21,7 @@
       </div>
     </nav>
     <section class="main">
-      <h1 style="text-align: center;">Rock Paper Scissor Game</h1>
+      <h1 style="text-align: center">Rock Paper Scissor Game</h1>
       <div class="choice1">
         <h2>Computer Choice : <span id="computer-choice"></span></h2>
       </div>
@@ -32,7 +32,6 @@
         <h2>Result : <span id="result"></span></h2>
         <h3><span id="total"></span></h3>
       </div>
-      
     </section>
     <section class="total-score">
       <div class="score1">
@@ -41,28 +40,59 @@
       <div class="score2">
         <h3>User Score : <span id="user-score">0</span></h3>
       </div>
-
     </section>
     <section class="anim">
-        <div class="option" id="rock1">
-            <img src="images/rock.png" height="80px" width="80px" />
-        </div>
-        <div class="option" id="paper1">
-            <img src="images/papers.png" height="80px" width="80px" />
-        </div>
-        <div class="option" id="scissor1">
-            <img src="images/scissor.png" height="80px" width="80px" />
-        </div>
-
+      <div class="option" id="rock1">
+        <img src="images/rock.png" height="80px" width="80px" />
+      </div>
+      <div class="option" id="paper1">
+        <img src="images/papers.png" height="80px" width="80px" />
+      </div>
+      <div class="option" id="scissor1">
+        <img src="images/scissor.png" height="80px" width="80px" />
+      </div>
     </section>
     <div class="reset">
       <button onclick="reset()"><b>Try again</b></button>
+      <button onclick="info()"><b>Info</b></button>
+    </div>
+    <!-- <div class="button-info">
+      <button onclick="info()">Info</button>
+    </div> -->
+    <div id="info" style="display: none; text-align: center" class="inform">
+      <div class="rules">
+        <h4><b>Rules of the Game</b></h4>
+
+        <ul>
+          <li>Rock wins against scissors</li>
+          <li>Paper wins against rock</li>
+          <li>scissors wins against paper</li>
+        </ul>
+      </div>
+      <div class="info">
+        <h4><b>Information</b></h4>
+        <p>
+          The game is played with three possible hand signals that represent a
+          rock, paper, and scissors.
+        </p>
+        <ul>
+          <li>Rock is a closed fist</li>
+          <li>
+            Paper is a flat hand with fingers and thumb extended and the palm
+            facing downward
+          </li>
+          <li>
+            Scissors is a fist with the index and middle fingers fully extended
+            toward the opposing player
+          </li>
+        </ul>
+      </div>
     </div>
 
     <footer class="footer">
       <p class="text-center"><b>&copy;2023. Designed by Subramanya K S.</b></p>
     </footer>
-  
+
     <script src="./js/app.js" charset="utf-8"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
