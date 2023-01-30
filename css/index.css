@@ -27,7 +27,9 @@ html{
     text-align:center;
 }
 
-
+.score1, .score2{
+    border: 2px solid black;
+}
 
 .input-button{
     padding:30px;
@@ -75,14 +77,15 @@ img{
 }
 .res{
     position: relative;
-    top: 30px;
+    margin-top: 30px;
+    padding-top:30px;
     right:-30px;
 }
 .reset{
     text-align:center;
 }
 .anim{
-    padding:50px;
+    padding:30px;
     margin:50px;
     text-align:center;
 }
