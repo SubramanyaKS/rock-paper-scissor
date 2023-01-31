@@ -125,10 +125,7 @@ function getResult() {
 }
 
 function finishGame() {
-    console.log("user: ",us);
-    console.log("compu : ",cs);
   if (uc < cc) {
-
     resultDisplay.innerHTML = " ";
     tr.innerHTML = `OH NO, YOU LOST THE GAME!`;
     setTimeout(() => {
