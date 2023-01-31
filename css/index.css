@@ -16,6 +16,9 @@ html{
     width:100%;
     height:100%;
 }
+.myTrue{
+    color:"#ff0000" !important;
+}
 .navbar-brand{
     color:white;
 }
@@ -102,6 +105,9 @@ button{
 img{
     background-color:#66ffff;
     border-radius:20%;
+}
+.option:hover, .image:hover{
+    background-color:#00ffff;
 }
 .choice2{
     /* align-item : left; */
