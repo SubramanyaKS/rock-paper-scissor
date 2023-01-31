@@ -6,6 +6,7 @@ box-sizing: border-box;
 
 body{
     padding:0;
+    background-color:#99ddff;
     margin:0;
     width:100%;
     height:100%;
@@ -18,19 +19,41 @@ html{
 .navbar-brand{
     color:white;
 }
-.main, .total-score, .total-round{
+.total-round{
+    padding:20px;
+    margin-top: 40px 0;
+    position: relative;
+    /* top: 30px; */
+    /* left: -25px; */
+    text-align:center;
+
+}
+.main, .total-score {
     padding:25px;
     margin-top: 50px 0;
     position: relative;
     top: 30px;
-    left: -25px;
+    /* left: -25px; */
     text-align:center;
 }
 
 .score1, .score2{
     border: 2px solid black;
+    background-color:#ccff33;
 }
-
+.choice1,.choice2 {
+    border: 2px solid black;
+    background-color:#ccff33;
+}
+.res{
+    background-color:#66ffcc;
+}
+.computers{
+    color:#3333ff;
+}
+.users{
+    color:#cc00ff
+}
 .input-button{
     padding:30px;
     text-align:center;
@@ -53,6 +76,7 @@ button{
     border: 4px solid black;
     border-radius: 50%;
     margin: 0px 20px;
+    background-color:#66ffff;
     padding: 10px;
     display: inline-block;
 }
@@ -70,16 +94,21 @@ button{
 }
 .select-round{
     border: 2px solid black;
+    border-radius:1%;
+    text-align:center;
+    font-size:18px;
+    background-color:#00ff00;
 }
 img{
-    background-color:white;
+    background-color:#66ffff;
+    border-radius:20%;
 }
 .choice2{
     /* align-item : left; */
     text-align:left;
     position: relative;
     top: 30px;
-    left: 30px;
+    /* left: 30px; */
 }
 .choice1{
     position: relative;
@@ -98,9 +127,12 @@ img{
 .reset{
     text-align:center;
 }
+h1{
+    font-family: 'Brush Script MT', cursive;
+}
 .anim{
-    padding:30px;
-    margin:50px;
+    padding:25px;
+    margin:30px;
     text-align:center;
 }
 .inform{
@@ -110,6 +142,12 @@ img{
 ul{ 
     display:inline-block;
 }
+.result{
+    color:#cc0000;
+}
+.totalr{
+    color:#003366;
+}
 h4{
     font-size:28px;
 }
@@ -118,8 +156,15 @@ li,p{
     text-align:center ;
     
 }
+.try-button{
+    background-color:#ccff99;
+}
+.info-button{
+    background-color:#ccccb3;
+}
 .rules, .info{
     padding:20px;
+    background-color:#ccccb3;
     border:2px solid black;
     border-radius:10%;
     text-align:center !important;
