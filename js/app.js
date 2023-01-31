@@ -127,12 +127,19 @@ function getResult() {
 function finishGame() {
   if (uc < cc) {
     resultDisplay.innerHTML = " ";
+    let element = document.getElementById('total');
+    element.style.color = "#f00";
+    console.log("Element",element.style.color);
     tr.innerHTML = `OH NO, YOU LOST THE GAME!`;
     setTimeout(() => {
       reset();
     }, 5000);
   } else if (uc > cc) {
     resultDisplay.innerHTML = " ";
+    let element = document.getElementById('total');
+    element.style.color = "#00ff00";
+    console.log("Element",element.style.color);
+    // element.toggle("myTrue");
     tr.innerHTML = `CONGRATULATIONS, YOU WON THE GAME! `;
     setTimeout(() => {
       reset();
