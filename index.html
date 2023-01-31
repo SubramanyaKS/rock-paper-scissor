@@ -24,22 +24,18 @@
     <section class="main">
       <h1 style="text-align: center">Rock Paper Scissor Game</h1>
       <div class="choice1">
-        <h3>Computer Choice : <span id="computer-choice"></span></h3>
+        <h3>Computer Choice : <span class="computers" id="computer-choice"></span></h3>
       </div>
       <div class="choice2">
-        <h3>User Choice : <span id="user-choice"></span></h3>
-      </div>
-      <div class="res">
-        <h3 class="resd">Result : <span id="result"></span></h3>
-        <h3 class="resf">Final Result :<span id="total"></span></h3>
+        <h3>User Choice : <span class="users" id="user-choice"></span></h3>
       </div>
     </section>
     <section class="total-score">
       <div class="score1">
-        <h3>Computer Score: <span id="computer-score">0</span></h3>
+        <h3>Computer Score: <span class="computers" id="computer-score">0</span></h3>
       </div>
       <div class="score2">
-        <h3>User Score : <span id="user-score">0</span></h3>
+        <h3>User Score : <span class="users" id="user-score">0</span></h3>
       </div>
     </section>
     <section class="total-round">
@@ -48,6 +44,13 @@
         <input class="select-round" type="text" id="round" name="round">
       </div>
     </section>
+    <section class="result-section">
+      <div class="res">
+        <h3 class="resd">Result : <span class="result" id="result"></span></h3>
+        <h3 class="resf">Final Result :<span class="totalr" id="total"></span></h3>
+      </div>
+    </section>
+    
     <section class="anim">
       <div class="option" id="rock1">
         <img src="images/rock.png" height="80px" width="80px" />
@@ -60,13 +63,13 @@
       </div>
     </section>
     <div class="reset">
-      <button onclick="reset()"><b>Try again</b></button>
-      <button onclick="info()"><b>Info</b></button>
+      <button class="try-button" onclick="reset()"><b>Try again</b></button>
+      <button class="info-button" onclick="info()"><b>Info</b></button>
     </div>
     <div id="info" style="display: none; text-align: center" class="inform">
       <div class="rules">
         <h4><b>Rules of the Game</b></h4>
-
+        <p>Type round before play</p>
         <ul>
           <li>Rock wins against scissors</li>
           <li>Paper wins against rock</li>
