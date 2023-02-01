@@ -17,3 +17,44 @@ Rock paper scissors (also known by other orderings of the three items, with "roc
 * ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 
+## Installation
+
+You can install the project with 2 method
+1. By using  Zip method.
+
+    * Download the project in zip format using "Download Zip " option.
+    * Save it in folder and run `index.html` file. 
+
+2. Using git.
+
+    * clone the repository using command ` git clone https://github.com/SubramanyaKS/rock-paper-scissor.git `
+    * run the `index.html` file
+
+
+## Deployment
+
+The website is deployed in Github Pages.
+
+you can refer [this page](https://pages.github.com/). for more details about deployment 
+
+
+
+## Demo
+
+You can see the demo of website by click on below link.
+
+[Website](https://subramanyaks.github.io/rock-paper-scissor)
+
+## Authors
+
+- [Subramanya K S](https://www.github.com/SubramanyaKS)
+
+## Feedback
+
+If you have any feedback, please reach out to me at [email](connectwithsubbu@gmail.com)
+
+If you like this don't forget to ⭐ the repository.
+
+
+Thank You for visiting
+Have a nice day 😊 
