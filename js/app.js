@@ -98,12 +98,12 @@ function getResult() {
     uc += 1;
   }
   if (computerChoice === "rock" && userChoice === "scissor") {
-    result = "You Lose ✖";
+    result = "You Lose ❌";
     cc += 1;
     uc == uc;
   }
   if (computerChoice === "paper" && userChoice === "rock") {
-    result = "You Lose ✖";
+    result = "You Lose ❌";
     cc += 1;
   }
   if (computerChoice === "paper" && userChoice === "scissor") {
@@ -111,7 +111,7 @@ function getResult() {
     uc += 1;
   }
   if (computerChoice === "scissor" && userChoice === "paper") {
-    result = "You Lose ✖";
+    result = "You Lose ❌";
     cc += 1;
   }
   if (computerChoice === "scissor" && userChoice === "rock") {
@@ -137,7 +137,7 @@ function finishGame() {
   } else if (uc > cc) {
     resultDisplay.innerHTML = " ";
     let element = document.getElementById('total');
-    element.style.color = "#00ff00";
+    element.style.color = "#02a11f";
     console.log("Element",element.style.color);
     // element.toggle("myTrue");
     tr.innerHTML = `CONGRATULATIONS, YOU WON THE GAME! `;
