@@ -165,8 +165,14 @@ li,p{
 .try-button{
     background-color:#ccff99;
 }
+.try-button:hover{
+    background-color:#aefa61;
+}
 .info-button{
     background-color:#ccccb3;
+}
+.info-button:hover{
+    background-color:#b0b0a4;
 }
 .rules, .info{
     padding:20px;
