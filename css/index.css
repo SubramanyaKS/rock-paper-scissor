@@ -105,6 +105,8 @@ button{
 img{
     background-color:#66ffff;
     border-radius:20%;
+    /* cursor: -webkit-grab; */
+    cursor: grab;
 }
 .option:hover, .image:hover{
     background-color:#00ffff;
