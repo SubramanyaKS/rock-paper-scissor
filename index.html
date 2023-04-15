@@ -18,54 +18,16 @@
     <nav class="navbar bg-dark">
       <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">Rock Paper scissor</span>
-      </div>
+      
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <button class="info-button" onclick="info()">Info</button>
+          </li>
+          </ul>
+        </div>
+        
     </nav>
     
-    <section class="main">
-      <h1 style="text-align: center">Rock Paper Scissor Game</h1>
-      <div class="choice1">
-        <h3>Computer Choice : <span class="computers" id="computer-choice"></span></h3>
-      </div>
-      <div class="choice2">
-        <h3>User Choice : <span class="users" id="user-choice"></span></h3>
-      </div>
-    </section>
-    <section class="total-score">
-      <div class="score1">
-        <h3>Computer Score: <span class="computers" id="computer-score">0</span></h3>
-      </div>
-      <div class="score2">
-        <h3>User Score : <span class="users" id="user-score">0</span></h3>
-      </div>
-    </section>
-    <section class="total-round">
-      <div class="round">
-        <h5>How many Round you want to play?</h5><br>
-        <input class="select-round" type="number" id="round" name="round">
-      </div>
-    </section>
-    <section class="result-section">
-      <div class="res">
-        <h3 class="resd">Result : <span class="result" id="result"></span></h3>
-        <h3 class="resf">Final Result :<span class="totalr" id="total"></span></h3>
-      </div>
-    </section>
-    
-    <section class="anim">
-      <div class="option" id="rock1">
-        <img class="image" src="images/rock.png" height="80px" width="80px" />
-      </div>
-      <div class="option" id="paper1">
-        <img class="image" src="images/papers.png" height="80px" width="80px" />
-      </div>
-      <div class="option" id="scissor1">
-        <img class="image" src="images/scissor.png" height="80px" width="80px" />
-      </div>
-    </section>
-    <div class="reset">
-      <button class="try-button" onclick="reset()"><b>Try again</b></button>
-      <button class="info-button" onclick="info()"><b>Info</b></button>
-    </div>
     <div id="info" style="display: none; text-align: center" class="inform">
       <div class="rules">
         <h4><b>Rules of the Game</b></h4>
@@ -94,6 +56,55 @@
           </li>
         </ul>
       </div>
+    </div>
+
+    
+    
+    <section class="main">
+      <h1 style="text-align: center">Let's Play ....</h1>
+      <section class="total-round">
+        <div class="round">
+          <h5>How many Round you want to play?</h5><br>
+          <input class="select-round" type="number" id="round" name="round">
+        </div>
+      </section>
+      <div class="choice1">
+        <h3>Computer Choice : <span class="computers" id="computer-choice"></span></h3>
+      </div>
+      <div class="choice2">
+        <h3>User Choice : <span class="users" id="user-choice"></span></h3>
+      </div>
+    </section>
+    <section class="total-score">
+      <div class="score1">
+        <h3>Computer Score: <span class="computers" id="computer-score">0</span></h3>
+      </div>
+      <div class="score2">
+        <h3>User Score : <span class="users" id="user-score">0</span></h3>
+      </div>
+    </section>
+    
+    <section class="result-section">
+      <div class="res">
+        <h3 class="resd">Result : <span class="result" id="result"></span></h3>
+        <h3 class="resf">Final Result :<span class="totalr" id="total"></span></h3>
+      </div>
+    </section>
+    
+    <section class="anim">
+      <div class="option" id="rock1">
+        <img class="image" src="images/rock.png" height="80px" width="80px" />
+      </div>
+      <div class="option" id="paper1">
+        <img class="image" src="images/papers.png" height="80px" width="80px" />
+      </div>
+      <div class="option" id="scissor1">
+        <img class="image" src="images/scissor.png" height="80px" width="80px" />
+      </div>
+    </section>
+    <div class="reset">
+      <button class="try-button" onclick="reset()"><b>Try again</b></button>
+      <!-- <button class="info-button" onclick="info()"><b>Info</b></button> -->
     </div>
 
     <footer class="footer">
