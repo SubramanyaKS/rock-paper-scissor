@@ -56,6 +56,7 @@ You can see the demo of website by click on below link.
 
 ## Feedback
 
+Feedback and suggestions are always welcome.
 If you have any feedback, please reach out to me at [email](connectwithsubbu@gmail.com)
 
 If you like this don't forget to ⭐ the repository.
