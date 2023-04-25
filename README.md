@@ -47,8 +47,9 @@ You can see the demo of website by click on below link.
 
 ## Screenshots
 
-
+<p align="center">
 <img src = "https://github.com/SubramanyaKS/rock-paper-scissor/blob/main/images/preview.png" alt = "website-preview"/>
+<p>
 
 ## Authors
 
