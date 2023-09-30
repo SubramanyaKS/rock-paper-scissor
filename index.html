@@ -17,95 +17,122 @@
   <body>
     <nav class="navbar bg-dark">
       <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">Rock Paper scissor</span>
-      
+        <span class="navbar-brand mb-0 h6">Rock Paper scissor</span>
+
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-              <button class="info-button" onclick="info()">Info</button>
+            <button id="openBtnRule" class="info-button ">Rule</button>
+            <button id="openBtn" class="info-button">Info</button>
           </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="popup" id="popup-rule">
+      <div class="popup-content">
+        <span class="close" id="closeBtnRule">&times;</span>
+        <div class="rules">
+          <h5><b>Rules of the Game</b></h5>
+          <p>Mention rounds before play</p>
+          <ul>
+            <li>Rock wins against scissors</li>
+            <li>Paper wins against rock</li>
+            <li>scissors wins against paper</li>
           </ul>
         </div>
-        
-    </nav>
-    
-    <div id="info" style="display: none; text-align: center" class="inform">
-      <div class="rules">
-        <h4><b>Rules of the Game</b></h4>
-        <p>Type round before play</p>
-        <ul>
-          <li>Rock wins against scissors</li>
-          <li>Paper wins against rock</li>
-          <li>scissors wins against paper</li>
-        </ul>
-      </div>
-      <div class="info">
-        <h4><b>Information</b></h4>
-        <p>
-          The game is played with three possible hand signals that represent a
-          rock, paper, and scissors.
-        </p>
-        <ul>
-          <li>Rock is a closed fist</li>
-          <li>
-            Paper is a flat hand with fingers and thumb extended and the palm
-            facing downward
-          </li>
-          <li>
-            Scissors is a fist with the index and middle fingers fully extended
-            toward the opposing player
-          </li>
-        </ul>
       </div>
     </div>
+
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="close" id="closeBtn">&times;</span>
+        <div class="info">
+          <h5><b>Information</b></h5>
+          <p>
+            The game is played with three possible hand signals that represent a
+            rock, paper, and scissors.
+          </p>
+          <ul>
+            <li>Rock is a closed fist</li>
+            <li>
+              Paper is a flat hand with fingers and thumb extended and the palm
+              facing downward
+            </li>
+            <li>
+              Scissors is a fist with the index and middle fingers fully
+              extended toward the opposing player
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    </div>
     <section class="main">
-      <h1 style="text-align: center">Let's Play ....</h1>
+      <h5 style="text-align: center">Let's Play ....</h5>
+      
       <section class="total-round">
         <div class="round">
-          <h5>How many Round you want to play?</h5><br>
-          <input class="select-round" type="number" id="round" name="round">
+          <h5 class="text-light">How many Round you want to play?</h5>
+          <br />
+          <input class="select-round" type="number" id="round" name="round" />
         </div>
       </section>
-      <div class="choice1">
-        <h3>Computer Choice : <span class="computers" id="computer-choice"></span></h3>
-      </div>
-      <div class="choice2">
-        <h3>User Choice : <span class="users" id="user-choice"></span></h3>
-      </div>
+      
+      <section>
+        <div class="container border border-dark">
+          <div class="row ">
+            <h5>Score Board</h5>
+            <div class="col border-top border-end border-dark">
+              <h5>
+                Computer Choice : <span class="computers" id="computer-choice"></span>
+              </h5>
+              <h5>
+                Computer Score: <span class="computers" id="computer-score">0</span>
+              </h5>
+            </div>
+            <div class="col border-top border-dark">
+              <h5>User Choice : <span class="users" id="user-choice"></span></h5>
+              <h5>User Score : <span class="users" id="user-score">0</span></h5>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <section class="anim">
+        <div class="option" id="rock1">
+          <img class="image" src="images/rock.png" height="80px" width="80px" />
+        </div>
+        <div class="option" id="paper1">
+          <img class="image" src="images/papers.png" height="80px" width="80px" />
+        </div>
+        <div class="option" id="scissor1">
+          <img
+            class="image"
+            src="images/scissor.png"
+            height="80px"
+            width="80px"
+          />
+        </div>
+      </section>
     </section>
-    <section class="total-score">
-      <div class="score1">
-        <h3>Computer Score: <span class="computers" id="computer-score">0</span></h3>
-      </div>
-      <div class="score2">
-        <h3>User Score : <span class="users" id="user-score">0</span></h3>
-      </div>
-    </section>
-    
+
     <section class="result-section">
       <div class="res">
-        <h3 class="resd">Result : <span class="result" id="result"></span></h3>
-        <h3 class="resf">Final Result :<span class="totalr" id="total"></span></h3>
+        <h5 class="resd">Result : <span class="result" id="result"></span></h5>
+        <h5 class="resf">
+          Final Result :<span class="totalr" id="total"></span>
+        </h5>
       </div>
     </section>
+
     
-    <section class="anim">
-      <div class="option" id="rock1">
-        <img class="image" src="images/rock.png" height="80px" width="80px" />
-      </div>
-      <div class="option" id="paper1">
-        <img class="image" src="images/papers.png" height="80px" width="80px" />
-      </div>
-      <div class="option" id="scissor1">
-        <img class="image" src="images/scissor.png" height="80px" width="80px" />
-      </div>
-    </section>
     <div class="reset">
-      <button class="try-button" onclick="reset()"><b>Try again</b></button>
+      <button class="try-button" onclick="reset()"><b>Restart</b></button>
       <!-- <button class="info-button" onclick="info()"><b>Info</b></button> -->
     </div>
 
     <footer class="footer">
-      <p class="text-center"><b>&copy;2023. Designed by Subramanya K S.</b></p>
+      <p class="h6 mt-2 text-center"><b>&copy; 2023. Designed by Subramanya K S.</b></p>
     </footer>
 
     <script src="./js/app.js" charset="utf-8"></script>

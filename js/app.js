@@ -153,6 +153,43 @@ function finishGame() {
   }
 }
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const openBtn = document.getElementById("openBtn");
+  const openBtnRule = document.getElementById('openBtnRule');
+  const popup = document.getElementById("popup");
+  const popuprule = document.getElementById("popup-rule");
+  const closeBtn = document.getElementById("closeBtn");
+  const closeBtnRule = document.getElementById("closeBtnRule");
+  
+  openBtnRule.addEventListener("click", function () {
+    popuprule.style.display = "block";
+});
+
+  openBtn.addEventListener("click", function () {
+      popup.style.display = "block";
+  });
+
+  closeBtnRule.addEventListener("click", function () {
+    popuprule.style.display = "none";
+});
+
+  closeBtn.addEventListener("click", function () {
+      popup.style.display = "none";
+  });
+
+  // Close the pop-up if the user clicks outside of it
+  window.addEventListener("click", function (event) {
+      if (event.target === popup) {
+          popup.style.display = "none";
+      }
+      if (event.target === popuprule) {
+        popuprule.style.display = "none";
+    }
+  });
+});
+
+
 function info() {
   var infor = document.getElementById("info");
   infor.classList.toggle("mystyle");
