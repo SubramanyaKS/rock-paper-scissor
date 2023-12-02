@@ -3,7 +3,12 @@ const userChoiceDisplay = document.getElementById("user-choice");
 const resultDisplay = document.getElementById("result");
 const possibleChoices = document.querySelectorAll("button");
 const tr = document.getElementById("total");
+const computerChoiceImg = document.getElementById('computer-choice-img');
+const userChoiceImg = document.getElementById('user-choice-img')
 const round = document.getElementById("round");
+const rockpath ='images/rock.png'
+const scissorpath='images/scissor.png'
+const paperpath='images/papers.png'
 const rk = document.getElementById("rock1");
 const pa = document.getElementById("paper1");
 const sc = document.getElementById("scissor1");
@@ -28,6 +33,7 @@ round.addEventListener("change", function (e) {
 
 rk.addEventListener("click", function () {
   userChoice = "rock";
+  userChoiceImg.src=rockpath;
   userChoiceDisplay.innerHTML = userChoice;
   if (roun > 0) {
     if (curr < roun) {
@@ -42,6 +48,7 @@ rk.addEventListener("click", function () {
 });
 pa.addEventListener("click", function () {
   userChoice = "paper";
+  userChoiceImg.src=paperpath;
   userChoiceDisplay.innerHTML = userChoice;
   if (roun > 0) {
     if (curr < roun) {
@@ -56,6 +63,7 @@ pa.addEventListener("click", function () {
 });
 sc.addEventListener("click", function () {
   userChoice = "scissor";
+  userChoiceImg.src=scissorpath;
   userChoiceDisplay.innerHTML = userChoice;
   if (roun > 0) {
     if (curr < roun) {
@@ -74,12 +82,15 @@ function generateComputerChoice() {
 
   if (randomNumber === 1) {
     computerChoice = "rock";
+    computerChoiceImg.src=rockpath;
   }
   if (randomNumber === 2) {
     computerChoice = "paper";
+    computerChoiceImg.src=paperpath;
   }
   if (randomNumber === 3) {
     computerChoice = "scissor";
+    computerChoiceImg.src=scissorpath;
   }
   computerChoiceDisplay.innerHTML = computerChoice;
 }
@@ -92,6 +103,7 @@ function getResult() {
   if (userChoice === computerChoice) {
     result = "It's a Draw 🤝";
     cc == cc;
+    // if(uc+cc<)
   }
   if (computerChoice === "rock" && userChoice === "paper") {
     result = "You Win ✔";
@@ -100,7 +112,6 @@ function getResult() {
   if (computerChoice === "rock" && userChoice === "scissor") {
     result = "You Lose ❌";
     cc += 1;
-    uc == uc;
   }
   if (computerChoice === "paper" && userChoice === "rock") {
     result = "You Lose ❌";
