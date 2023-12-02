@@ -47,8 +47,9 @@ You can see the demo of website by click on below link.
 
 ## Screenshots
 
-
+<p align="center">
 <img src = "https://github.com/SubramanyaKS/rock-paper-scissor/blob/main/images/preview.png" alt = "website-preview"/>
+<p>
 
 ## Authors
 
@@ -56,6 +57,7 @@ You can see the demo of website by click on below link.
 
 ## Feedback
 
+Feedback and suggestions are always welcome.
 If you have any feedback, please reach out to me at [email](connectwithsubbu@gmail.com)
 
 If you like this don't forget to ⭐ the repository.
