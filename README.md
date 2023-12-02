@@ -51,7 +51,7 @@ You can see the demo of website by click on below link.
 <img src = "https://github.com/SubramanyaKS/rock-paper-scissor/blob/main/images/preview.png" alt = "website-preview"/>
 <p> -->
 
-![Website Preview](https://github.com/SubramanyaKS/rock-paper-scissor/blob/main/images/preview_1.png)
+![Website Preview](./images/preview_1.png)
 
 ## Authors
 
