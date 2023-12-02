@@ -15,9 +15,9 @@
     <link href="./css/index.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar bg-dark">
+    <nav class="navbar">
       <div class="container-fluid">
-        <span class="navbar-brand mb-0 h6">Rock Paper scissor</span>
+        <span class="navbar-brand mb-0">Rock Paper scissor</span>
 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -45,8 +45,8 @@
 
     <div class="popup" id="popup">
       <div class="popup-content">
-        <span class="close" id="closeBtn">&times;</span>
-        <div class="info">
+        <span class="close bg-light" id="closeBtn">&times;</span>
+        <div class="shadow-lg info">
           <h5><b>Information</b></h5>
           <p>
             The game is played with three possible hand signals that represent a
@@ -69,61 +69,84 @@
 
     </div>
     <section class="main">
-      <h5 style="text-align: center">Let's Play ....</h5>
-      
-      <section class="total-round">
-        <div class="round">
-          <h5 class="text-light">How many Round you want to play?</h5>
-          <br />
-          <input class="select-round" type="number" id="round" name="round" />
-        </div>
-      </section>
-      
-      <section>
-        <div class="container border border-dark">
-          <div class="row ">
-            <h5>Score Board</h5>
-            <div class="col border-top border-end border-dark">
-              <h5>
-                Computer Choice : <span class="computers" id="computer-choice"></span>
-              </h5>
-              <h5>
-                Computer Score: <span class="computers" id="computer-score">0</span>
-              </h5>
-            </div>
-            <div class="col border-top border-dark">
-              <h5>User Choice : <span class="users" id="user-choice"></span></h5>
-              <h5>User Score : <span class="users" id="user-score">0</span></h5>
-            </div>
+      <!-- Total Rounds Section -->
+      <div class="d-flex  justify-content-center round">
+        <!-- <label for="round" class="form-label game-font text-dark">Select Number of Rounds:</label> -->
+        <div class=" input-group shadow">
+          <input class="form-control select-round" placeholder="Enter Number of Rounds" type="number" id="round" name="round" aria-describedby="round-addon" />
+          <div class="input-group-append">
+            <span class="input-group-text" id="round-addon">Rounds</span>
           </div>
         </div>
-      </section> 
+      </div>
+
+      <section class=" d-flex justify-content-center">
+        <div class="m-3">
+          <h5>You</h5>
+          <p><span class="users" id="user-score">0</span></p>
+          <img class="bg-transparent shadow-lg" id="user-choice-img" height="50px" src="images/rock.png"/>
+          <p><span class="users" id="user-choice"></span></p>
+        </div>
+        <div class="m-3">
+          <h5>Computer</h5>
+          <p><span class="computers" id="computer-score">0</span></p>
+          <img class="bg-transparent shadow-lg" id="computer-choice-img" height="50px" src="images/rock.png"/>
+          <p><span class="computers" id="computer-choice"></span>
+          </p>
+        </div>
+      </section>
+    
+      <!-- Score Board Section -->
+      <!-- <section class=" shadow-lg container border border-dark mt-4"> -->
+        <!-- <h5>Score Board</h5> -->
+        <!-- <div class="row"> -->
+          <!-- Computer Section -->
+          <!-- <div class="col border-top border-end border-dark"> -->
+            <!-- <h6>
+              Computer Choice : <span class="computers" id="computer-choice"></span>
+            </h6> -->
+            <!-- <h6>
+              Computer Score: <span class="computers" id="computer-score">0</span>
+            </h6> -->
+          <!-- </div> -->
+    
+          <!-- User Section -->
+          <!-- <div class="col border-top border-dark">
+            <h6>User Choice : <span class="users" id="user-choice"></span></h6>
+            <h6>User Score : <span class="users" id="user-score">0</span></h6>
+          </div>
+        </div>
+      </section> -->
+      <section class="result-section">
+        <div class="res">
+          <h5 class="resd"><span class="result" id="result"></span></h5>
+          <h5 class=" resf">
+          <span class="totalr" id="total"></span>
+          </h5>
+        </div>
+      </section>
+    </section>
+   
+    
       <section class="anim">
         <div class="option" id="rock1">
-          <img class="image" src="images/rock.png" height="80px" width="80px" />
+          <img class="image" src="images/rock.png" height="70px" width="70px" />
         </div>
         <div class="option" id="paper1">
-          <img class="image" src="images/papers.png" height="80px" width="80px" />
+          <img class="image" src="images/papers.png" height="70px" width="70px" />
         </div>
         <div class="option" id="scissor1">
           <img
             class="image"
             src="images/scissor.png"
-            height="80px"
-            width="80px"
+            height="70px"
+            width="70px"
           />
         </div>
       </section>
     </section>
 
-    <section class="result-section">
-      <div class="res">
-        <h5 class="resd">Result : <span class="result" id="result"></span></h5>
-        <h5 class="resf">
-          Final Result :<span class="totalr" id="total"></span>
-        </h5>
-      </div>
-    </section>
+    
 
     
     <div class="reset">
