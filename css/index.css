@@ -11,20 +11,21 @@ body{
     background-color:#3268ff !important;
     margin:0;
     width:100%;
-    font-family: 'Press Start 2P', 'cursive' !important;
+    /* font-family: 'Press Start 2P', 'cursive' !important; */
     height:100%;
     /* font-family:"cursive"; */
 }
 html{
     width:100%;
     height:100%;
-    font-family: 'Press Start 2P', 'cursive';
+    /* font-family: 'Press Start 2P', 'cursive'; */
 }
 .myTrue{
     color:"#ff0000" !important;
 }
 .navbar-brand{
     color:white;
+    font-size: 1em;
 }
 .total-round{
     padding:20px;
@@ -39,12 +40,15 @@ html{
     padding:10px;
     margin-top: 10px 0;
     position: relative;
+    /* border: 3px solid #00ff00; */
     top: 10px;
-    font-family: 'Press Start 2P', 'cursive';
+    /* font-family: 'Press Start 2P', 'cursive'; */
     /* left: -25px; */
     text-align:center;
 }
-
+.resd, .resf{
+    font-size:20px;
+}
 .total-score {
     padding:30px;
     margin-top: 20px 0;
@@ -91,12 +95,12 @@ button{
     border: 4px solid black;
 }
 .option{
-    border: 4px solid black;
+    /* border: 4px solid black; */
     border-radius: 50%;
     margin: 0px 20px;
     background-color:#66ffff;
     padding: 10px;
-    box-shadow: 5px 10px;
+    box-shadow: 0px 0px 5px 5px #333, 0px 0px 5px 5px #333;
     display: inline-block;
 }
 .choice1, .choice2{
@@ -116,7 +120,7 @@ button{
     border-radius:1%;
     text-align:center;
     font-size:18px;
-    width: 100px;
+    width: 25%;
     background-color:#00ff00;
 }
 img{
@@ -152,19 +156,20 @@ img{
 .reset{
     text-align:center;
 }
-h1{
-    font-family: 'Brush Script MT', cursive;
+.game-font, h5{
+    font-family: 'Brush Script MT', 'cursive' !important;
+    font-size: 2.0em;
 }
 .anim{
-    padding:10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 10px;
-    margin-bottom:10px;
+    padding:0.625em;
+    padding-top: 0.9375em;
+    padding-bottom: 0.9375em;
+    margin-top: 0.625em;
+    margin-bottom:0.625em;
     text-align:center;
 }
 .inform{
-    padding:30px;
+    padding:1.875em;
     text-align:center !important;
 }
 ul{ 
@@ -176,18 +181,15 @@ ul{
 .totalr{
     color:#003366;
 }
-h4{
-    font-size:28px;
-}
 li,p{
-    font-size:18px;
+    font-size:1em;
     text-align:center ;
     
 }
 .try-button{
     background-color:#ccff99;
     color:black;
-    font-size: 14px;
+    font-size: 0.8em;
     padding: 1%;
     margin-top: 10px;
     border: 1px solid black;
@@ -200,21 +202,21 @@ li,p{
     background-color:#0c0c0c;
     padding:10px;
     box-shadow: 0px 0px 5px #b0b0a4;
-    font-size:14px;
+    font-size:1em;
 }
 .info-button:hover{
     background-color:#b0b0a4;
 }
 .rules, .info{
-    padding:20px;
+    padding:1.25em;
     background-color:#ccccb3;
     border:2px solid black;
     border-radius:10%;
     text-align:center !important;
 }
 .footer{
-    padding-top:10px;
-    font-size: 14px !important;
+    padding-top:0.625em;
+    font-size: 0.875em !important;
 }
 
 body {
