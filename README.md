@@ -41,15 +41,10 @@ you can refer [this page](https://pages.github.com/). for more details about dep
 
 ## Demo
 
-You can see the demo of website by click on below link.
-
-[Website](https://subramanyaks.github.io/rock-paper-scissor)
+Rock Paper Scissor is live and ready for you to explore! Visit [Rock Paper Scissor](https://subramanyaks.github.io/rock-paper-scissor)
 
 ## Screenshots
 
-<!-- <p align="center">
-<img src = "https://github.com/SubramanyaKS/rock-paper-scissor/blob/main/images/preview.png" alt = "website-preview"/>
-<p> -->
 
 ![Website Preview](./images/preview_1.png)
 
