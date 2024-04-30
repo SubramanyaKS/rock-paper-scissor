@@ -142,6 +142,7 @@ function finishGame() {
     element.style.color = "#f00";
     console.log("Element",element.style.color);
     tr.innerHTML = `OH NO, YOU LOST THE GAME!`;
+    playSound(700,1000)
     setTimeout(() => {
       reset();
     }, 5000);
@@ -152,12 +153,14 @@ function finishGame() {
     console.log("Element",element.style.color);
     // element.toggle("myTrue");
     tr.innerHTML = `CONGRATULATIONS, YOU WON THE GAME! `;
+    playSound(700,1000)
     setTimeout(() => {
       reset();
     }, 5000);
   } else {
     resultDisplay.innerHTML = "";
     tr.innerHTML = `THIS GAME WAS A DRAW!`;
+    playSound(700,1000)
     setTimeout(() => {
       reset();
     }, 5000);
@@ -204,4 +207,29 @@ document.addEventListener("DOMContentLoaded", function () {
 function info() {
   var infor = document.getElementById("info");
   infor.classList.toggle("mystyle");
+}
+
+function playSound(freq,time) {
+  // Create an AudioContext instance
+  const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+  // Create an OscillatorNode
+  const oscillator = audioContext.createOscillator();
+
+  // Set the oscillator type to 'sine' wave
+  oscillator.type = 'square';
+
+  // Set the frequency of the oscillator (440 Hz for a standard beep)
+  oscillator.frequency.setValueAtTime(freq, audioContext.currentTime);
+
+  // Connect the oscillator to the AudioContext's destination (the speakers)
+  oscillator.connect(audioContext.destination);
+
+  // Start the oscillator
+  oscillator.start();
+
+  // Stop the oscillator after a short duration (e.g., 100 milliseconds)
+  setTimeout(() => {
+    oscillator.stop();
+  }, time);
 }
