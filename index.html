@@ -129,13 +129,13 @@
    
     
       <section class="anim">
-        <div class="option" id="rock1">
+        <div class="option" id="rock1" onclick="playSound(600,200)">
           <img class="image" src="images/rock.png" height="70px" width="70px" />
         </div>
-        <div class="option" id="paper1">
+        <div class="option" id="paper1" onclick="playSound(500,200)">
           <img class="image" src="images/papers.png" height="70px" width="70px" />
         </div>
-        <div class="option" id="scissor1">
+        <div class="option" id="scissor1" onclick="playSound(440,200)">
           <img
             class="image"
             src="images/scissor.png"
@@ -146,9 +146,6 @@
       </section>
     </section>
 
-    
-
-    
     <div class="reset">
       <button class="try-button" onclick="reset()"><b>Restart</b></button>
       <!-- <button class="info-button" onclick="info()"><b>Info</b></button> -->
